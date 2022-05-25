@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Asícrono y NO asíncrono</title>
+</head>
+<body>
+
+   <div class="content">
+
+    <form action="verificar.php" method="POST" id="form_1">
+
+        <h2>Formulario Asíncrono</h2>
+
+        <input type="text" placeholder = "Usuario" name = "usuario" class="input" > 
+        <input type="password" placeholder= "Clave" name = "clave" class="input"> 
+        <input type="email" placeholder = "Email" name="email" class="input"> 
+
+        <input type="submit" value="Enviar" name = "enviar">
+
+    </form>
+
+
+    <form action="" id="form_2">
+
+        <h2>Formulario Síncrono</h2>
+
+
+        <input type="text" placeholder = "Usuario" name = "usuario" class="input"> 
+        <input type="password" placeholder= "Clave" name = "clave" class="input"> 
+        <input type="email" placeholder = "Email" name="email" class="input"> 
+
+        <input type="submit" value="Enviar" name = "enviar">
+
+    </form>
+   </div>
+
+
+   <p>
+       Dos formularios, uno que recarga la página y otro no, en el script se ve la
+       diferencia pero en gran resumen, uno utilza fetch, el otro no.
+       El formulario SINCRONO tiene mayor taza de transferencia ya que NO RECARGA la 
+       pagina al enviar datos,gracias a la API FETCH, mientras que el ASINCRONO, si.
+   </p>
+    
+</body>
+<script src="java.js"></script>
+</html>
